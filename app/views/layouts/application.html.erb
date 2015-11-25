@@ -13,10 +13,17 @@
   <div>
     <h4>Sign in</h4>
     <ul>
+      <%#cf. https://www.youtube.com/watch?v=1yRvsI34Ysw#t=5m23s%>
+      <% if current_user %>
+        <li>Signed in as <%= current_user.name %> - <%= image_tag @auth['info']['image'],
+          width: '50', height: '50', class: 'nav_logo' %></li>
+      <% else %>
       <li><a href="#">Sign in with Twitter</a></li>
       <li><a href="#">Sign in with GitHub</a></li>
+      <% end %>
     </ul>
   </div>
+</nav>
 <%= yield %>
 
 </body>
