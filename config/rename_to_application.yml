@@ -1,3 +1,5 @@
+# IMPORTANT: Rename this file to `application.yml` before pasting in sensitive information like OAuth keys, as that filename is excluded via `.gitignore`
+
 development:
   SECRET_KEY_BASE: #generate with rake secret and paste
 
