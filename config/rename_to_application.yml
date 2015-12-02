@@ -1,0 +1,13 @@
+development:
+  SECRET_KEY_BASE: #generate with rake secret and paste
+
+test:
+  SECRET_KEY_BASE: #generate with rake secret and paste
+
+production:
+  SECRET_KEY_BASE: #generate with rake secret and paste
+
+TWITTER_OAUTH_KEY: #copy from https://apps.twitter.com
+TWITTER_OAUTH_SECRET: #copy from https://apps.twitter.com
+GITHUB_OAUTH_KEY: #copy from https://github.com/settings/developers
+GITHUB_OAUTH_SECRET: #copy from https://github.com/settings/developers
