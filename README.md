@@ -9,13 +9,17 @@ https://www.youtube.com/watch?v=11BInedaQSo
   application secrets
 
 ## MANUAL
+* run `bundle install` to install gems
 * generate application secrets with `rake secret` and copy to
   `rename_to_application.yml`
-* set callback URLs from OAuth providers to correct URL. When running
-  locally, consider using `http://lvh.me` as callback URL instead of
-  `localhost`.
+* set callback URLs for registered application on GitHub, Twitter to correct
+  URL. When running locally, you can use `http://lvh.me` as callback URL in case
+  `http://localhost` is not allowed by the provider.
 * copy/paste OAuth keys from GitHub, Twitter
 * rename file to `application.yml` for Figaro support
+* start local Rails server with `rails s` and navigate to
+  `http://localhost:3000` in browser or `http://lvh.me:3000` when using
+  `lvh.me` as callback.
 
 **For Heroku deployment**
 * `heroku login` on command line
