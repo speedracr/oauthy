@@ -37,3 +37,14 @@ https://www.youtube.com/watch?v=11BInedaQSo
     `http://app-name.herokuapp.com` and `https://...`
 * To check the Heroku environment variables, log into your Heroku
   account, navigate to app and select "Reveal config vars" in Settings.
+
+### Next steps
+Store user information as per
+https://www.youtube.com/watch?v=vFiblY5KUZE
+
+**Current status**
+* extended user model to store (Twitter) information
+* rewrote sessions controller to always update user
+
+**Next**
+* integrate Twitter gem (see video above, starting at 19min)
