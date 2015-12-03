@@ -14,9 +14,9 @@
     <a href="#" class="navbar-brand">OAuthy2</a>
     <ul class="nav navbar-nav">
       <% if current_user %>
-        <li class="nav-item pull-right">Signed in as <%= current_user.name %> - <%= image_tag @auth['info']['image'],
+        <li class="nav-item pull-right add-space">Signed in as <%= current_user.name %> - <%= image_tag @auth['info']['image'],
           width: '50', height: '50', class: 'nav_logo' %></li>
-        <li class="nav-item pull-right"><%= link_to "Sign out", 'sign_out', method: :delete, class: 'nav-link' %></li>
+        <li class="nav-item pull-right add-space"><%= link_to "Sign out", 'sign_out', method: :delete, class: 'nav-link' %></li>
       <% else %>
         <li class="nav-item pull-right add-space"><%= link_to "Log in with GitHub", "auth/github", class: "nav-link" %></li>
         <li class="nav-item pull-right add-space"><%= link_to "Log in with Twitter", "auth/twitter", class: "nav-link" %></li>
