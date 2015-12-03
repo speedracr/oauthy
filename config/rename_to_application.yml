@@ -14,5 +14,5 @@ TWITTER_OAUTH_KEY: #copy from https://apps.twitter.com
 TWITTER_OAUTH_SECRET: #copy from https://apps.twitter.com
 GITHUB_OAUTH_KEY: #copy from https://github.com/settings/developers
 GITHUB_OAUTH_SECRET: #copy from https://github.com/settings/developers
-FACEBOOK_APP_ID: #copy from https://developers.facebook.com/apps
-FACEBOOK_APP_SECRET: #copy from https://developers.facebook.com/apps
+FACEBOOK_OAUTH_KEY: #copy App ID from https://developers.facebook.com/apps and insert with '' => '12345'
+FACEBOOK_OAUTH_SECRET: #copy App Secret from https://developers.facebook.com/apps
