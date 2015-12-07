@@ -14,6 +14,8 @@ gem 'figaro'
 gem 'omniauth-twitter'
 gem 'omniauth-github'
 gem 'omniauth-facebook'
+gem 'twitter'
+gem 'responders', '~> 2.0'
 
 group :development, :test do
   gem 'byebug'
