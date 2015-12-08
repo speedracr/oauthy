@@ -30,4 +30,13 @@ class TweetsController < ApplicationController
     @tweet.update tweet_params
     respond_with @tweet
   end
+
+  private
+    def set_tweet
+      @tweet = Tweet.find(params[:id])
+    end
+
+    def tweet_params
+      params.require(:tweet).permit(:body, :user_id)
+    end
 end
