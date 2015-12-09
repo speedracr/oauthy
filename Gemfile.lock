@@ -120,6 +120,9 @@ GEM
     omniauth-github (1.1.2)
       omniauth (~> 1.0)
       omniauth-oauth2 (~> 1.1)
+    omniauth-imgur (0.0.0)
+      omniauth (~> 1)
+      omniauth-oauth2 (~> 1)
     omniauth-oauth (1.1.0)
       oauth
       omniauth (~> 1.0)
@@ -229,6 +232,7 @@ DEPENDENCIES
   jquery-rails
   omniauth-facebook
   omniauth-github
+  omniauth-imgur
   omniauth-twitter
   pg (= 0.17.1)
   rails (= 4.2.1)
