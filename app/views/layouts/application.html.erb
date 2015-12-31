@@ -9,6 +9,16 @@
 </head>
 <body>
 
+  <% if notice %>
+    <div id="notice-wrapper">
+      <p class="notice"><%= notice %></p>
+    </div>
+  <% elsif alert %>
+    <div id="notice-wrapper">
+      <p class="alert"><%= alert %></p>
+    </div>
+  <% end %>
+
 <nav class="navbar navbar-dark bg-inverse">
   <div class="container">
     <a href="/" class="navbar-brand">OAuthy2</a>
@@ -29,14 +39,6 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-10">
-      <% flash.each do |key, value| %>
-        <div class="alert alert-info"><%= value %></div>
-      <% end %>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-10">
       <% if current_user %>
         <div class="text-center">
           <h1>Welcome, <%= current_user.name %></h1>
@@ -51,5 +53,6 @@
     </div>
   </div>
 </div>
+
 </body>
 </html>
