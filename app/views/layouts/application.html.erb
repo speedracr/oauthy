@@ -24,7 +24,6 @@
     <a href="/" class="navbar-brand">OAuthy2</a>
     <ul class="nav navbar-nav">
       <% if current_user %>
-        <li class="nav-item pull-right add-space"><%= image_tag, class: "nav-profile-image" %> </li>
         <li class="nav-item pull-right add-space nav-element">Signed in as <%= current_user.name %></li>
         <li class="nav-item pull-right add-space"><%= link_to "Sign out", 'sign_out', method: :delete, class: 'nav-link' %></li>
       <% else %>
