@@ -22,15 +22,15 @@
 <nav class="navbar navbar-dark bg-inverse">
   <div class="container">
     <a href="/" class="navbar-brand">OAuthy2</a>
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav navbar-right">
       <% if current_user %>
-        <li class="nav-item pull-right add-space "><%= image_tag current_user.image, class: 'nav-profile-image' %></li>
-        <li class="nav-item pull-right add-space nav-element">Signed in as <%= current_user.name %></li>
-        <li class="nav-item pull-right add-space"><%= link_to "Sign out", sign_out_path, method: :delete, class: 'nav-link' %></li>
+        <li class="nav-item add-space "><%= image_tag current_user.image, class: 'nav-profile-image' %></li>
+        <li class="nav-item add-space nav-element">Signed in as <%= current_user.name %></li>
+        <li class="nav-item add-space"><%= link_to "Sign out", sign_out_path, method: :delete, class: 'nav-link' %></li>
       <% else %>
-        <li class="nav-item pull-right add-space"><%= link_to "Log in with GitHub", "auth/github", class: "nav-link" %></li>
-        <li class="nav-item pull-right add-space"><%= link_to "Log in with Twitter", "auth/twitter", class: "nav-link" %></li>
-        <li class="nav-item pull-right add-space"><%= link_to "Log in with Facebook", "auth/facebook", class: "nav-link" %></li>
+        <li class="nav-item add-space"><%= link_to "Log in with GitHub", "auth/github", class: "nav-link" %></li>
+        <li class="nav-item add-space"><%= link_to "Log in with Twitter", "auth/twitter", class: "nav-link" %></li>
+        <li class="nav-item add-space"><%= link_to "Log in with Facebook", "auth/facebook", class: "nav-link" %></li>
       <% end %>
     </ul>
   </div>
