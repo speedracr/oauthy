@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.2.3'
+ruby '2.3.0'
 
-gem 'rails', '4.2.5'
+gem 'rails', '4.2.4'
 gem 'sass-rails', '~> 5.0'
 gem 'puma'
 gem 'bootstrap', '~> 4.0.0.alpha1'
