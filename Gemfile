@@ -4,7 +4,7 @@ ruby '2.3.0'
 gem 'rails', '4.2.4'
 gem 'sass-rails', '~> 5.0'
 gem 'puma'
-gem 'bootstrap', '~> 4.0.0.alpha1'
+gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
@@ -32,3 +32,6 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
+end
