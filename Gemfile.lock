@@ -69,6 +69,7 @@ GEM
       thor (~> 0.14)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    gosu (0.10.4)
     haml (4.0.7)
       tilt
     hashie (3.4.3)
@@ -230,6 +231,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   figaro
+  gosu
   haml
   jbuilder (~> 2.0)
   jquery-rails
